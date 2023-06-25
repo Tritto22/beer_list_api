@@ -7,6 +7,7 @@
 
 <script>
 import BeersList from '../sections/BeersList.vue'
+
 export default {
     name: 'Main',
     components: {

@@ -3,7 +3,6 @@
         <img :src="beer.image_url" :alt="beer.name">
         <h4>{{beer.name}}</h4>
         <p>{{beer.volume.value}} {{beer.volume.unit}}</p>
-        <p class="intruso">{{ beer.tagline }}</p>
     </div>
 </template>
 

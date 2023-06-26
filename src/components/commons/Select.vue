@@ -1,5 +1,5 @@
 <template>
-    <select v-model="selectValue" name="" id="">
+    <select @change="$emit('value', selectValue)" v-model="selectValue" name="" id="">
         <option value="">tipes of beers</option>
         <option value="bitter">bitter</option>
         <option value="weisse">weisse</option>
@@ -17,9 +17,6 @@
 <script>
 export default {
     name: 'Select',
-    props: {
-        info:Object
-    },
     data() {
         return{
             selectValue: ''
